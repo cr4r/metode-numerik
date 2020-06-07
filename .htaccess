@@ -1,0 +1,20 @@
+Options Indexes FollowSymLinks
+
+ErrorDocument 404 /numeric/404.php
+
+RewriteEngine On
+RewriteRule ^dashboard$ index.php
+
+RewriteRule ^metode/tabel$ index.php?page=metode&type=tabel [L]
+RewriteRule ^metode/bisection$ index.php?page=metode&type=bisection [L]
+RewriteRule ^metode/regula-falsi$ index.php?page=metode&type=regula-falsi [L]
+RewriteRule ^metode/iterasi-sederhana$ index.php?page=metode&type=iterasi-sederhana [L]
+RewriteRule ^metode/newton-raphson$ index.php?page=metode&type=newton-raphson [L]
+RewriteRule ^metode/secant$ index.php?page=metode&type=secant [L]
+RewriteRule ^metode/selisih-maju$ index.php?page=metode&type=selisih-maju [L]
+RewriteRule ^metode/selisih-tengah$ index.php?page=metode&type=selisih-tengah [L]
+RewriteRule ^metode/selisih-mundur$ index.php?page=metode&type=selisih-mundur [L]
+
+RewriteRule ^differensiasi$ index.php?page=differensiasi [L]
+RewriteRule ^differensiasi/tabel$ index.php?page=differensiasi&type=tabel [L]
+RewriteRule ^differensiasi/hasil$ index.php?page=differensiasi&type=hasil [L]
